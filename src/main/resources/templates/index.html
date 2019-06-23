@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 th:text="${message}">
+    Default message
+</h1>
+
+<form th:action="@{/add}" method="post">
+    <p>  Title:
+        <input type="text" th:field="${formAtricle.title}"></p>
+    <p>  Content:
+        <textarea th:field="${formAtricle.content}"></textarea></p>
+    <p>  Tags:
+        <input type="text" th:field="${formAtricle.tags}"></p>
+
+    <p><input type="submit" value="Add"></p>
+</form>
+</body>
+</html>
