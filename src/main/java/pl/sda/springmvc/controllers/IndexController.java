@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import pl.sda.springmvc.model.Book;
 import pl.sda.springmvc.repositories.BookRepository;
 
-import javax.jws.WebParam;
-import java.util.Arrays;
 import java.util.List;
 
 @Controller
